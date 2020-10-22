@@ -8,8 +8,6 @@ name = 'pallet-template'
 repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
 version = '2.0.0'
 
-[package.metadata.docs.rs]
-targets = ['x86_64-unknown-linux-gnu']
 
 # alias "parity-scale-code" to "codec"
 [dependencies.codec]

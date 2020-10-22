@@ -25,13 +25,14 @@ hex-literal = { optional = true, version = '0.3.1' }
 serde = { features = ['derive'], optional = true, version = '1.0.101' }
 
 # local dependencies
-pallet-template = { path = '../pallets/template', default-features = false, version = '2.0.0' }
+pallet-template = { path = '../pallets/template', default-features = false, version = '2.0.0'}
+substrate-ai= {path = '../pallets/ai', default-features = false, version = '2.0.0' }
 
 # Substrate dependencies
 frame-benchmarking = { default-features = false, optional = true, version = '2.0.0' }
 frame-executive = { default-features = false, version = '2.0.0' }
 frame-support = { default-features = false, version = '2.0.0' }
-frame-system = { default-features = false, version = '2.0.0' }
+frame-system = { default-features = false, version = '2.0.0'}
 frame-system-benchmarking = { default-features = false, optional = true, version = '2.0.0' }
 frame-system-rpc-runtime-api = { default-features = false, version = '2.0.0' }
 pallet-aura = { default-features = false, version = '2.0.0' }
@@ -42,7 +43,8 @@ pallet-sudo = { default-features = false, version = '2.0.0' }
 pallet-timestamp = { default-features = false, version = '2.0.0' }
 pallet-transaction-payment = { default-features = false, version = '2.0.0' }
 pallet-transaction-payment-rpc-runtime-api = { default-features = false, version = '2.0.0' }
-sp-api = { default-features = false, version = '2.0.0' }
+sp-api = { default-features = false, version = '2.0.0'}
+sp-io = { default-features = false, version = '2.0.0' }
 sp-block-builder = { default-features = false, version = '2.0.0' }
 sp-consensus-aura = { default-features = false, version = '0.8.0' }
 sp-core = { default-features = false, version = '2.0.0' }
@@ -79,6 +81,7 @@ std = [
     'pallet-randomness-collective-flip/std',
     'pallet-sudo/std',
     'pallet-template/std',
+    'substrate-ai/std',
     'pallet-timestamp/std',
     'pallet-transaction-payment/std',
     'pallet-transaction-payment-rpc-runtime-api/std',
@@ -86,6 +89,7 @@ std = [
     'sp-block-builder/std',
     'sp-consensus-aura/std',
     'sp-core/std',
+    'sp-io/std',
     'sp-inherents/std',
     'sp-offchain/std',
     'sp-runtime/std',
